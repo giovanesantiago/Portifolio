@@ -7,12 +7,14 @@ import { PaginaInicialComponent } from './pagina-inicial/pagina-inicial.componen
 import { ProjetosComponent } from './projetos/projetos.component';
 
 const routes: Routes = [
-  {path: 'pagina-inicial' , component: PaginaInicialComponent},
-  { path: "", redirectTo: "pagina-inicial", pathMatch: "full"}, // Redirecionando primeiro acesso para pagina inicial 
-  {path: 'eu', component: EuComponent},
-  {path: 'habilidades', component: HabilidadesComponent},
-  {path: 'projetos', component: ProjetosComponent},
-  {path: 'certificados', component: CertificadosComponent}
+  { path: '', redirectTo: "pagina-inicial", pathMatch: "full"}, // Redirecionando primeiro acesso para pagina inicial 
+  {path: 'pagina-inicial', loadChildren: () => import('./pagina-inicial/pagina-inicial.module').then(m => m.PaginaInicialModule)},
+  {path: 'eu', loadChildren: () => import('./eu/eu.module').then(m => m.EuModule)},
+  {path: 'habilidades', loadChildren: () => import('./habilidades/habilidades.module').then(m => m.HabilidadesModule)},
+  {path: 'projetos', loadChildren: () => import('./projetos/projetos.module').then(m => m.ProjetosModule)},
+  
+  {path: 'certificados', loadChildren: () => import('./certificados/certificados.module').then(m => m.CertificadosModule)}
+  
 ];
 
 @NgModule({
