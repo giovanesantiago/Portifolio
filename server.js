@@ -2,7 +2,7 @@ const express = require("express");
 
 const app = express();
 
-const appName = 'app-portfolio';
+const appName = 'assets';
 
 const outputPath = `${__dirname}/dist/${appName}`;
 
