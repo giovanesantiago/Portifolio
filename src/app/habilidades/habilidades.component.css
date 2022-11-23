@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+main{
+    padding: 20px;
+}
+
+article{
+    display: flex;
+    justify-content: space-around;
+    align-content: stretch;
+    margin: 30px;
+    width: 95%;
+}
+.card {
+    width: 35%;
+    color: rgba(255, 255, 255, 0.603);
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #132d47;
+    background-color: #0B0B0D;
+}
+ul{
+    list-style: none;
+    text-align: justify;
+}
+li {
+    margin-bottom: 10px;
+    margin-left: -30px;
+    padding: 5px; 
+}
+.progresso{
+    display: flex;
+    width: 100%;
+}
+.barra{
+    width: 10%;
+    height: 4px;
+    background-color: #3B0D87;
+}
+.incompleto {
+    opacity: 0.3;
+}
+
+/* Resposividade */
+
+@media (max-width: 870px){
+    article{
+        display: block;
+    }
+    .card{
+        margin-bottom: 40px !important;
+        margin: auto;
+        width: 60%;
+    }
+    main{
+        height: 100% !important;
+    }
+}
+@media (max-width: 650px) {
+    .card{
+        width: 80%;
+    }
+    article{
+        margin: auto;
+    }
+    h1{
+        margin-bottom: 20px;
+    }
+}

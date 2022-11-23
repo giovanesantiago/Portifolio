@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
+
+.container-pag-inicial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* Formatando texto */
+.apresentacao{
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    color: rgba(255, 255, 255, .75);
+    font-family: 'Special Elite', cursive;
+    font-size: 2em;
+    text-align: center;
+    margin: 0 auto;
+    /* configurando animação */
+    white-space: nowrap; /* Não quebra linha */
+    overflow: hidden; /* Se não tem largura esconde e confirme aumenta vai aparecendo */
+    display: block;
+}
+.semBorder {
+    border-right-color: transparent;
+}
+
+
+
+.animacao {
+    animation: cursor 500ms steps(40) 5s normal, /* Cursor piscando */
+    digitar 3s steps(40) 1s normal both; 
+}
+.animacao2 {
+    animation: cursor 500ms steps(40) infinite normal, digitar 4s steps(40) 5s normal both;
+}
+
+/* Animação do cursor piscando  */
+@keyframes cursor{
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/* Animação do texto */
+@keyframes digitar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 17em;
+        
+    }
+}
+
+/* Reponsividade */
+@media (max-width: 600px){
+    .apresentacao{
+        font-size: 1.6em;
+    }
+}
+@media (max-width: 420px){
+    .apresentacao{
+        font-size: 1.2em;
+        
+    }
+}
+@media (max-width: 285px){
+    .apresentacao{
+        font-size: 1.0em; 
+    }
+}

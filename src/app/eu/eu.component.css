@@ -1,0 +1,143 @@
+main{
+    display: flex;
+    align-items: center;
+}
+article {
+    box-shadow: 3px 3px 10px #132d47;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+img {
+    width: 30%;
+    margin-bottom: 80px;
+}
+
+h2{
+    color: aliceblue;
+    font-size: 1.4em;
+}
+span{
+    color: antiquewhite;
+    font-size: 1.0em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    /* configurando animação */
+    white-space: nowrap; /* Não quebra linha */
+    overflow: hidden; /* Se não tem largura esconde e confirme aumenta vai aparecendo */
+    display: block;
+}
+
+.container-competencias{
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.competencias{
+    margin: 3px;
+    border: #132d47 solid 1px;
+    padding: 5px;
+    box-shadow: 1px 1px 5px #132d47;
+    color: #132d47;
+}
+
+.digitar-nome {
+    animation: digitar 4s steps(50) 1s normal both;
+}
+.digitar-idade {
+    animation: digitar 4s steps(50) 3s normal both;
+}
+.digitar-profissao {
+    animation: digitar 4s steps(50) 4s normal both;
+}
+.digitar-sobre {
+    animation: digitar 4s steps(50) 6s normal both;
+}
+
+@keyframes digitar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 33em;
+        
+    }
+}
+@keyframes digitar-menor {
+    from {
+        width: 0;
+    }
+    to {
+        width: 15em;
+        
+    }
+}
+
+/* Responsividade */
+
+@media (max-width: 1150px){
+    h2{
+        font-size: 1.0em;
+    }
+    p{
+        font-size: 0.8em;
+        padding: 3px;
+        font-weight: 600; 
+    }
+}
+@media (max-width: 850px){
+    article{
+        padding: 15px !important;
+    }
+    h2{
+        font-size: 0.8em;
+    }
+    p{
+        font-size: 0.8em;
+        font-weight: 700;
+    }
+}
+@media (max-width: 850px){
+    img {
+        display: none;
+    }
+    article{
+        margin: 20px;
+        padding: 3px;
+    }
+    h2{
+        font-size: 0.8em;
+    }
+    p{
+        font-size: 0.7em;
+        font-weight: 800;
+    }
+}
+@media (max-width: 420px) {
+    article{
+        margin: 30px;
+        padding: 10px;
+    }
+    h2{
+        font-size: 1.0em;
+        font-weight: 500;
+    }
+    p{
+        font-size: 0.7em;
+        font-weight: 800;
+    }
+    .digitar-nome {
+        animation: digitar-menor 4s steps(50) 1s normal both;
+    }
+    .digitar-idade {
+        animation: digitar-menor 4s steps(50) 3s normal both;
+    }
+    .digitar-profissao {
+        animation: digitar-menor 4s steps(50) 4s normal both;
+    }
+    .digitar-sobre, .sobre {
+        display: none;
+    }
+
+}

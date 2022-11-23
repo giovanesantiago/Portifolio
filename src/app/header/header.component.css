@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&display=swap');
+
+/* Routas da pagina */
+.subtitle-navbar {
+    margin-right: 50px;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+/* Icones das redes socias */
+.redes-navbar {
+    flex-direction: row;
+}
+.redes-navbar li{
+    margin: 10px;
+}

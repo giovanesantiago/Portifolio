@@ -1,0 +1,82 @@
+main{
+    text-align: center;
+    height: 100%;
+}
+a {
+    color: black;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.icon-download {
+    width: 30px;
+}
+.container-certificado{
+    border-top: 1px solid wheat;
+    border-bottom: 1px solid wheat;
+    text-align: start;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.card-certificado{
+    width: 30%;
+    margin: 10px;
+}
+.img-certificado{
+    width: 100%;
+    max-height: 75%;
+    border-radius: 3%;
+    box-shadow: 1px 1px 3px #132d47;
+}
+
+
+.container-certificado .card-certificado img:hover{
+    transition: .2s linear;
+    transform: scale(1.1);
+}
+h3{
+    font-size: 1.5em;
+    text-align: center;
+}
+h4{
+    font-size: 1.3em;
+}
+
+/* Responsividade */
+@media (max-width: 1200px){
+    .img-certificado{
+        max-height: 60%;
+    }
+}
+@media (max-width: 850px) {
+    .card-certificado{
+        width: 40%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    .card-certificado{
+        width: 60%;
+        margin-top: 10px !important;
+        margin: auto;
+    }
+    .container-certificado{
+        display: block;
+        margin: auto;
+    }
+}
+@media (max-width: 850px) {
+    .card-certificado{
+        width: 80%;
+    }
+}
+@media (max-width: 450px) {
+    .card-certificado{
+        width: 95%;
+    }
+    .title{
+        font-size: 3.0em;
+        padding-top: 10px;
+    }
+}

@@ -1,0 +1,21 @@
+
+<main>
+    <article>
+        <h1 class="title" > Projetos </h1>
+        <app-barra-pesquisa></app-barra-pesquisa>
+        <div  class="card-container" *ngIf="projetos.length > 0 else semProjeto">
+            <div *ngFor="let projeto of projetos" class="card"  style="width: 17rem;">
+                <button class="btn btn-secondary" (click)="exibirIMG(projeto.id)" id="botao">Exibir Imagem</button>
+                <img [src]="projeto.img" class="card-img-top" [id]="projeto.id" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{ projeto.titulo }}</h5>
+                  <p class="card-text">{{ projeto.descricao }}</p>
+                  <p class="card-text">{{ projeto.tecnologia }}</p>
+                  <a [href]="projeto.linkGithub" target="_blank" class="btn btn-primary">Repositorio no GitHub</a>
+                </div>
+            </div>
+        </div>
+    </article>
+</main>
+<ng-template #semProjeto> <h5 class="semProjeto"> Nenhum projeto foi encontrado !</h5> </ng-template>
+
