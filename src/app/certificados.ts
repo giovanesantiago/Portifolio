@@ -6,11 +6,11 @@ export interface ICertificados {
 }
 // 
 export const certificados: ICertificados[] = [
+    {img: './assets/Certificados/quebec.png', linkCertificado: 'https://www.dio.me/certificate/42D0AB1F/share', title: 'Bootcamp Québec Java Digital'},
+    {img: './assets/Certificados/springBoot.png', linkCertificado: 'https://www.dio.me/certificate/A795E2C6/share', title: 'Imersão no Spring Framework com Spring Boot'},
     {img: './assets/Certificados/ComNet.png', linkCertificado: 'https://www.dio.me/certificate/CA947BDE/share', title: 'Principais Protocolos de Comunicação da Internet'},
     {img: './assets/Certificados/JUnit.png', linkCertificado: 'https://www.dio.me/certificate/897CD767/share', title: 'Testes Unitários Com JUnit'},
-    {img: './assets/Certificados/collections.png', linkCertificado: 'https://www.dio.me/certificate/896D1EDD/share', title: 'Trabalhando com Collections Java'},
     {img: './assets/Certificados/poo.png', linkCertificado: 'https://www.dio.me/certificate/A4AAAF65/share', title: 'Programação Orientada a Objetos'},
-    {img: './assets/Certificados/metodosJava.png', linkCertificado: 'https://www.dio.me/certificate/7575A02F/share', title: 'Entendendo Métodos Java'},
     {img: './assets/Certificados/operadoresJava.png', linkCertificado: 'https://www.dio.me/certificate/EFBBE5FF/share', title: 'Variáveis, Tipos de Dados e Operadores Matemáticos em Java'},
     {img: './assets/Certificados/scrum.png', linkCertificado: 'https://www.dio.me/certificate/9E2120F9/share', title: 'Projetos ágeis com SCRUM'},
     {img: './assets/Certificados/pensamentoComp.png', linkCertificado: 'https://www.dio.me/certificate/AD3DAB44/share', title: 'Pensamento Computacional'},
