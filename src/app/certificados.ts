@@ -6,6 +6,7 @@ export interface ICertificados {
 }
 // 
 export const certificados: ICertificados[] = [
+    {img: './assets/Certificados/ciberSecu.png', linkCertificado: 'https://www.dio.me/certificate/567FE4C0/share', title: 'Formação Cybersecurity Specialist'},
     {img: './assets/Certificados/quebec.png', linkCertificado: 'https://www.dio.me/certificate/42D0AB1F/share', title: 'Bootcamp Québec Java Digital'},
     {img: './assets/Certificados/springBoot.png', linkCertificado: 'https://www.dio.me/certificate/A795E2C6/share', title: 'Imersão no Spring Framework com Spring Boot'},
     {img: './assets/Certificados/ComNet.png', linkCertificado: 'https://www.dio.me/certificate/CA947BDE/share', title: 'Principais Protocolos de Comunicação da Internet'},

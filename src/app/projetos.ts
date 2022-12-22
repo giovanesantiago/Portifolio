@@ -10,7 +10,8 @@ export interface IProjetos {
 }
 
 export const projetos: IProjetos[] = [
-    {id: 18, img: "./assets/projetos/agendaGioDev.png", titulo: "Agenda GioDev", descricao: "Simulação de agenda telefonica,  É so uma silumação, não tem banco de dados." ,tecnologia: "Java | Javascript | Spring | Angular", linkGithub: "https://github.com/giovanesantiago/Agenda-GioDev" },
+    {id: 19, img: "./assets/projetos/checkList.png", titulo: "CheckList Royal", descricao: "Facilitar o controle e gestão de atividades a serem realizadas antes da entrega de motos" ,tecnologia: "Java | TypeScript | Spring | Angular", linkGithub: "https://github.com/giovanesantiago/app-checklist-entregas" },
+    {id: 18, img: "./assets/projetos/agendaGioDev.png", titulo: "Agenda GioDev", descricao: "Simulação de agenda telefonica,  É so uma silumação, não tem banco de dados." ,tecnologia: "Java | TypeScript | Spring | Angular", linkGithub: "https://github.com/giovanesantiago/Agenda-GioDev" },
     {id: 18, img: "./assets/projetos/botRoyal.png", titulo: "JBot Royal", descricao: "Automação de envio de mensagem no whatsapp para varios contatos com Selenium" ,tecnologia: "Java | Selenium | Swing GUI", linkGithub: "https://github.com/giovanesantiago/BotRoyal" },
     {id: 17, img: "./assets/projetos/JavinhaBank.png", titulo: "Javinha Bank", descricao: "Praticando orientação a objetos com Java e testes Unitarios com JUni, simaludor de um Banco " ,tecnologia: "Java | JUnit", linkGithub: "https://github.com/giovanesantiago/Banco-Digital" },
     {id: 16, img: "./assets/projetos/populacao1.png", titulo: "PopulacaoNE", descricao: "Tratamento de dados com Collections Map, atividade pratica do Bootcamp Quebec " ,tecnologia: "Java", linkGithub: "https://github.com/giovanesantiago/PopulacaoNE" },
