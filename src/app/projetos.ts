@@ -10,6 +10,7 @@ export interface IProjetos {
 }
 
 export const projetos: IProjetos[] = [
+    {id: 20, img: "./assets/projetos/ksi.png", titulo: "Desafio KSI", descricao: "Cadastrar dados com validações de informações e armazenamento em banco." ,tecnologia: "Java | Spring | Thymeleaf | Postgre", linkGithub: "https://github.com/giovanesantiago/Desafio-KSI" },
     {id: 19, img: "./assets/projetos/checkList.png", titulo: "CheckList Royal", descricao: "Facilitar o controle e gestão de atividades a serem realizadas antes da entrega de motos" ,tecnologia: "Java | Spring | Angular | PostgreSQL", linkGithub: "https://github.com/giovanesantiago/app-checklist-entregas" },
     {id: 18, img: "./assets/projetos/agendaGioDev.png", titulo: "Agenda GioDev", descricao: "Simulação de agenda telefonica,  É so uma silumação, não tem banco de dados." ,tecnologia: "Java | TypeScript | Spring | Angular", linkGithub: "https://github.com/giovanesantiago/Agenda-GioDev" },
     {id: 18, img: "./assets/projetos/botRoyal.png", titulo: "JBot Royal", descricao: "Automação de envio de mensagem no whatsapp para varios contatos com Selenium" ,tecnologia: "Java | Selenium | Swing GUI", linkGithub: "https://github.com/giovanesantiago/BotRoyal" },
